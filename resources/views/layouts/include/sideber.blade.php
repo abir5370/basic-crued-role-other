@@ -87,6 +87,24 @@
           </div>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#multistep" role="button" aria-expanded="false" aria-controls="emails">
+            <i class="link-icon" data-feather="mail"></i>
+            <span class="link-title">multistep Form</span>
+            <i class="link-arrow" data-feather="chevron-down"></i>
+          </a>
+          <div class="collapse" id="multistep">
+            <ul class="nav sub-menu">
+              <li class="nav-item">
+                <a href="{{route('multiform.create')}}" class="nav-link">Form</a>
+                <a href="{{route('multiform.two.create')}}" class="nav-link">Form2</a>
+                {{-- <a href="{{route('oneToMany.relation')}}" class="nav-link">One To Many</a>
+                <a href="{{route('manyToMany.relation')}}" class="nav-link">Many To Many</a> --}}
+              </li>
+            </ul>
+          </div>
+        </li>
+
         
         <li class="nav-item">
           <a href="{{route('role.index')}}" class="nav-link">

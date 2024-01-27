@@ -73,6 +73,11 @@ License: You must have a valid license purchased only from above link or https:/
   <!-- custom js for this page -->
   <script src="{{asset('backend/js/dashboard.js')}}"></script>
   <script src="{{asset('backend/js/datepicker.js')}}"></script>
+
+   
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   @yield('footer_script')
 	<!-- end custom js for this page -->
 </body>

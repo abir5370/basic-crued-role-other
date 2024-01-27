@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 @section('content')
 <div class="row justify-content-center mt-3">
-    <div class="col-md-8">
+    <div class="col-md-10">
         <div class="card">
             @if (session('success'))
             <div class="alert alert-success">{{session('success')}}</div>
@@ -22,11 +22,12 @@
                             <td>{{$key+1}}</td>
                             <td>{{$user->name}}</td>
                             <td>{{$user->email}}</td>
-                            <td>{{$user->phone->name}}</td>
+                             <td>{{ $user->phone ? $user->phone->name : 'unknown' }}</td>
+                            <td></td>
                             {{-- <td>
                                 <img width="50" src="{{asset('uploads/crued/'.$crued->photo)}}" alt="">
                             </td> --}}
-                            <td></td>
+                            
                             <td class="btn-group">
                                 <a href="" class="btn btn-sm btn-primary mx-1">Edit</a>
                                 <form action="{{route('user.delete',)}}" method="POST">
